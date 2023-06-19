@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     description: defaultMetadata.description,
     images: [defaultMetadata.image],
   },
-  metadataBase: new URL(''),
+  // metadataBase: new URL(''),
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
