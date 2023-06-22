@@ -11,7 +11,7 @@ const ComingSoonPage = () => {
       </div>
       <div className="flex h-full w-full max-w-2xl flex-col items-center justify-between px-4 pb-[13vh] pt-[10vh] text-center text-white">
         <div className={clsx(poppins.className, 'w-fit rounded-1.5xl bg-white px-4 py-3 text-22/28 text-black')}>
-          <span>BreakFast</span>
+          <span>BreakFirst</span>
         </div>
         <div className="mb-[7vh]">
           <div className={clsx(poppins.className, 'flex flex-col text-5xl tracking-tight sm:text-66/84')}>
