@@ -7,7 +7,8 @@ const defaultMetadata = {
   title: 'BreakFirst - Embrace limits breaking. Make decentralization shines.',
   description:
     'An early stage web3 fund and incubator run by a team of seasoned crypto founders, incubators, and investors',
-  image: 'https://d1j2c9jkfhu70p.cloudfront.net/355703c5-80d9-46fe-b6b8-0c2daeabc6f3.png',
+  // image: 'https://d1j2c9jkfhu70p.cloudfront.net/ea42d4c0-72cc-4449-8955-a49bfb6d5f7f.png', // purple
+  image: 'https://d1j2c9jkfhu70p.cloudfront.net/6e0d92f6-7171-4184-a474-0844e800b907.png', // orange
   url: '',
 };
 
