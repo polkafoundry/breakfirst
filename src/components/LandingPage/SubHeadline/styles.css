@@ -1,0 +1,5 @@
+.subheadline-text-gradient {
+  background: -webkit-linear-gradient(0deg, #E6B73F 0.34%, #FF4DE5 57.71%, #813DFF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

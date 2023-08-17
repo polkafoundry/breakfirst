@@ -1,0 +1,31 @@
+.main-breakfirst-marque-div {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.breakfirst-marque-div-1 {
+  animation: marquee1 20s linear infinite;
+  animation-delay: -10s;
+}
+
+.breakfirst-marque-div-2 {
+  animation: marquee2 20s linear infinite;
+}
+
+@keyframes marquee1 {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee2 {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-200%);
+  }
+}
