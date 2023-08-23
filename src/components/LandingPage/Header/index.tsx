@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import clsx from 'clsx';
 import LinkStyled from '@/components/Base/LinkStyled';
@@ -13,13 +13,19 @@ import MobileMenu from './MobileMenu';
 import './styles.css';
 
 const Header = () => {
-  const [headlineVisible, setHeadlineVisible] = useState<boolean>(document.body.scrollTop <= innerHeight);
+  const [headlineVisible, setHeadlineVisible] = useState<boolean>(true);
 
-  document.body.addEventListener('scroll', () => {
-    if (document.body.scrollTop <= innerHeight !== headlineVisible) {
-      setHeadlineVisible(document.body.scrollTop <= innerHeight);
-    }
-  });
+  useEffect(() => {
+    document.body.addEventListener('scroll', () => {
+      if (document.body.scrollTop <= innerHeight !== headlineVisible) {
+        setHeadlineVisible(document.body.scrollTop <= innerHeight);
+      }
+    });
+  }, [headlineVisible]);
+
+  useEffect(() => {
+    setHeadlineVisible(document.body.scrollTop <= innerHeight);
+  }, []);
 
   return (
     <header className="fixed top-0 z-[100] w-full pt-5 font-barlow opacity-0 lg:px-14 xl:px-40" id="header">
