@@ -25,7 +25,7 @@ export const SlidesData = [
         type: 'image',
       },
       {
-        url: 'https://youtu.be/d2DhLTJFK58',
+        url: 'https://www.youtube.com/embed/d2DhLTJFK58',
         thumbnail: NextBullThumb,
         type: 'video',
       },
@@ -68,7 +68,7 @@ export const SlidesData = [
         type: 'image',
       },
       {
-        url: 'https://youtu.be/lkg7cOJbbuI',
+        url: 'https://www.youtube.com/embed/lkg7cOJbbuI',
         thumbnail: CocktailThumb,
         type: 'video',
       },

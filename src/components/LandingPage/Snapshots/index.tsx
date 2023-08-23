@@ -6,7 +6,7 @@ import { Swiper, SwiperClass, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import ReactPlayer from 'react-player';
+import ReactPlayer from 'react-player/youtube';
 import HeadlingWithStroke from '@/components/Base/Headings/HeadingWithStroke';
 import BreakFirstMarquee from '@/components/Base/Marquee/BreakFirstMarquee';
 import NextButton from '@/assets/images/LandingPage/swiper-next.svg';
