@@ -6,7 +6,6 @@ import { Swiper, SwiperClass, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import ReactPlayer from 'react-player/youtube';
 import HeadlingWithStroke from '@/components/Base/Headings/HeadingWithStroke';
 import BreakFirstMarquee from '@/components/Base/Marquee/BreakFirstMarquee';
 import NextButton from '@/assets/images/LandingPage/swiper-next.svg';
@@ -122,14 +121,8 @@ const Snapshots = () => {
                         return (
                           <SwiperSlide key={`${index}-${mediaIndex}`} className="h-full">
                             <div className="flex-1">
-                              <div className="mx-auto h-[40vw] w-[72vw] lg:h-[506px] lg:w-[760px] lg:py-10">
-                                <ReactPlayer
-                                  url={item.url}
-                                  // playing={videoPlaying[index]}
-                                  controls={true}
-                                  width="100%"
-                                  height="100%"
-                                />
+                              <div className="video-player mx-auto h-[40vw] w-[72vw] lg:h-[506px] lg:w-[760px] lg:py-10">
+                                <iframe src={item.url}></iframe>
                               </div>
                             </div>
                           </SwiperSlide>

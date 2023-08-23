@@ -48,3 +48,8 @@
     transform: translateX(-55%) translateY(10%) scale(0.8);
   }
 }
+
+.video-player iframe {
+  width: 100%;
+  height: 100%;
+}
