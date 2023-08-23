@@ -1,0 +1,35 @@
+.contact-form-text-gradient {
+  background: -webkit-linear-gradient(0deg, #FF4DE5 -20%, #813DFF 20%, #1C89FF 120%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.form-input {
+  width: 100%;
+  background: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  text-color: white;
+  font-size: 16px;
+  padding: 6px 0px;
+  font-family: var(--barlow-font);
+}
+
+.form-input:focus {
+  outline: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+textarea.form-input {
+  height: 144px;
+  resize: none;
+}
+
+.contact-container-background {
+  background: black;
+}
+
+@media only screen and (min-width: 1024px) {
+  .contact-container-background {
+    background: linear-gradient(#000000 85%, #193DE7 85%, #193DE7 150%)
+  }
+}

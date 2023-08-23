@@ -6,7 +6,7 @@ import { poppins, sourceSansPro } from '@/assets/fonts';
 
 const ComingSoonPage = () => {
   return (
-    <div className="relative flex h-full w-full justify-center overflow-x-hidden">
+    <div className="relative flex h-full w-full justify-center overflow-x-hidden font-inter">
       <div className="absolute -left-[100%] -right-[100%] bottom-0 top-0 -z-10 sm:-left-[70%] sm:-right-[70%] md:-left-[40%] md:-right-[40%] lg:-left-[20%] lg:-right-[20%] xl:-left-0 xl:-right-0">
         <Image src={bgComingSoon} alt="" className="z-10" fill={true} />
       </div>

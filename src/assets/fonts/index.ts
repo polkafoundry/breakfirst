@@ -1,4 +1,4 @@
-import { Inter, Poppins } from 'next/font/google';
+import { Archivo, Barlow, Inter, Poppins } from 'next/font/google';
 import localFont from 'next/font/local';
 
 export const sourceSansPro = localFont({
@@ -17,4 +17,17 @@ export const poppins = Poppins({
   subsets: ['latin'],
   display: 'swap',
   variable: '--poppins-font',
+});
+
+export const barlow = Barlow({
+  weight: ['400', '500'],
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--barlow-font',
+});
+
+export const archivo = Archivo({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--archivo-font',
 });
