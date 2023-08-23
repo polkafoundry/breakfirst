@@ -38,20 +38,20 @@ const Footer = () => {
           </LinkStyled> */}
           </div>
           <div className="flex gap-8 lg:hidden">
-            <LinkStyled href="/">Privacy Policy</LinkStyled>
-            <LinkStyled href="/">Terms and Conditions</LinkStyled>
+            {/* <LinkStyled href="/">Privacy Policy</LinkStyled>
+            <LinkStyled href="/">Terms and Conditions</LinkStyled> */}
+            <p>Privacy Policy</p>
+            <p>Terms and Conditions</p>
           </div>
         </div>
       </div>
       <div className="bg-black">
         <div className="mx-auto flex max-w-screen-3xl items-center justify-center px-8 py-3 lg:justify-between lg:px-20 lg:text-xl">
           <div className="hidden gap-12 lg:flex">
-            <a className="hover:underline" href="#" target="_blank" rel="noopener noreferrer">
-              Privacy Policy
-            </a>
-            <a className="hover:underline" href="#" target="_blank" rel="noopener noreferrer">
-              Terms and Conditions
-            </a>
+            {/* <LinkStyled href="/">Privacy Policy</LinkStyled>
+            <LinkStyled href="/">Terms and Conditions</LinkStyled> */}
+            <p>Privacy Policy</p>
+            <p>Terms and Conditions</p>
           </div>
           <div>
             <p>© 2023 BreakFirst. All Rights Reserved.</p>

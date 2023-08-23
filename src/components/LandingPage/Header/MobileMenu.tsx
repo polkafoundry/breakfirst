@@ -18,9 +18,12 @@ const MobileMenu = () => {
   return (
     <div className="relative">
       <div className="relative">
-        <LinkStyled href="/" className="absolute left-5 top-0 z-50 md:left-10" id="header-logo">
+        {/* <LinkStyled href="/" className="absolute left-5 top-0 z-50 md:left-10" id="header-logo">
           <Image src={Logo} alt="BreakFirst Logo" height={40} />
-        </LinkStyled>
+        </LinkStyled> */}
+        <div className="absolute left-5 top-0 z-50 md:left-10" id="header-logo">
+          <Image src={Logo} alt="BreakFirst Logo" height={40} />
+        </div>
         <div
           className={clsx(
             isOpen ? 'translate-x-[200%]' : 'translate-x-0',
@@ -51,14 +54,17 @@ const MobileMenu = () => {
           <div className="flex flex-col gap-8 text-center">
             {NavbarItems.map((item) => {
               return (
-                <LinkStyled
-                  key={item?.text}
-                  href={item?.href}
-                  openInNewTab={item?.newTab}
-                  className="px-4 py-2 text-2xl"
-                >
+                // <LinkStyled
+                //   key={item?.text}
+                //   href={item?.href}
+                //   openInNewTab={item?.newTab}
+                //   className="px-4 py-2 text-2xl"
+                // >
+                //   {item.text}
+                // </LinkStyled>
+                <div key={item?.text} className="px-4 py-2 text-2xl">
                   {item.text}
-                </LinkStyled>
+                </div>
               );
             })}
           </div>

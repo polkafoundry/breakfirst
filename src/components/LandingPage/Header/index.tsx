@@ -30,13 +30,19 @@ const Header = () => {
   return (
     <header className="fixed top-0 z-[100] w-full pt-5 font-barlow opacity-0 lg:px-14 xl:px-40" id="header">
       <div className="relative mx-auto hidden max-w-screen-3xl text-black lg:block">
-        <LinkStyled
+        {/* <LinkStyled
           href="/"
           className={clsx(headlineVisible ? 'prim-logo' : 'alt-logo', 'logo-transition absolute top-2.5 z-10')}
           id="header-logo"
         >
           <Image src={Logo} alt="BreakFirst Logo" height={40} />
-        </LinkStyled>
+        </LinkStyled> */}
+        <div
+          className={clsx(headlineVisible ? 'prim-logo' : 'alt-logo', 'logo-transition absolute top-2.5 z-10')}
+          id="header-logo"
+        >
+          <Image src={Logo} alt="BreakFirst Logo" height={40} />
+        </div>
         <div
           className={clsx(
             headlineVisible ? 'prim-nav' : 'alt-nav',
@@ -46,9 +52,12 @@ const Header = () => {
         >
           {NavbarItems.map((item) => {
             return (
-              <LinkStyled key={item?.text} href={item?.href} openInNewTab={item?.newTab} className="text-xl">
+              // <LinkStyled key={item?.text} href={item?.href} openInNewTab={item?.newTab} className="text-xl">
+              //   {item.text}
+              // </LinkStyled>
+              <div key={item?.text} className="text-xl">
                 {item.text}
-              </LinkStyled>
+              </div>
             );
           })}
         </div>
