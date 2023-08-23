@@ -28,36 +28,74 @@ const Headline = ({ ref }: IProps) => {
       <LoadingHeadline start={start} end={end} />
       <div className="h-full w-full translate-y-[100vh] px-5 pt-20 md:px-20 lg:px-0 lg:pt-[100px]" id="main-headline">
         <div className="mx-auto flex h-full max-w-screen-2xl flex-col justify-center gap-4 pb-[20vh] text-center lg:gap-8 lg:px-20 lg:pb-0 xl:px-40">
-          <div className="hidden h-[228px] overflow-hidden lg:block">
-            <div className="slide-text-vertical">
-              <p className="font-archivo text-64/76 font-bold uppercase">
-                We <span className="headline-text-gradient">invest</span> in the future of digital worlds powered by
-                true decentralization
-              </p>
-              <p className="font-archivo text-64/76 font-bold uppercase">
-                We <span className="headline-text-gradient">embrace</span> in the future of digital worlds powered by
-                true decentralization
-              </p>
-              <p className="font-archivo text-64/76 font-bold uppercase">
-                We <span className="headline-text-gradient">accelerate</span> in the future of digital worlds powered by
-                true decentralization
-              </p>
-            </div>
-            <div className="slide-text-vertical">
-              <p className="font-archivo text-64/76 font-bold uppercase">
-                We <span className="headline-text-gradient">invest</span> in the future of digital worlds powered by
-                true decentralization
-              </p>
-              <p className="font-archivo text-64/76 font-bold uppercase">
-                We <span className="headline-text-gradient">embrace</span> in the future of digital worlds powered by
-                true decentralization
-              </p>
-              <p className="font-archivo text-64/76 font-bold uppercase">
-                We <span className="headline-text-gradient">accelerate</span> in the future of digital worlds powered by
-                true decentralization
-              </p>
-            </div>
+          <div className="">
+            <p className="font-archivo text-64/76 font-bold uppercase">
+              We{' '}
+              <span className="new-slide-container relative inline-block h-[58px] w-[334px] overflow-hidden">
+                <span className="absolute -top-[1px] left-0 left-[50%] inline-flex -translate-x-[50%] flex-col">
+                  <span className="new-slide-text inline-flex flex-col">
+                    <span className="headline-text-gradient tracking-wide">invest in</span>
+                    <span>
+                      <br />
+                    </span>
+                    <span className="headline-text-gradient tracking-wide">embrace</span>
+                    <span>
+                      <br />
+                    </span>
+                    <span className="headline-text-gradient tracking-tight">accelerate</span>
+                    <span>
+                      <br />
+                    </span>
+                  </span>
+                  <span className="new-slide-text inline-flex flex-col">
+                    <span className="headline-text-gradient tracking-wide">invest in</span>
+                    <span>
+                      <br />
+                    </span>
+                    <span className="headline-text-gradient tracking-wide">embrace</span>
+                    <span>
+                      <br />
+                    </span>
+                    <span className="headline-text-gradient tracking-tight">accelerate</span>
+                    <span>
+                      <br />
+                    </span>
+                  </span>
+                </span>
+              </span>{' '}
+              the future of digital worlds powered by true decentralization
+            </p>
           </div>
+          {/* <div className="hidden h-[228px] overflow-hidden lg:block">
+            <div className="slide-text-vertical">
+              <p className="font-archivo text-64/76 font-bold uppercase">
+                We <span className="headline-text-gradient">invest in</span> the future of digital worlds powered by
+                true decentralization
+              </p>
+              <p className="font-archivo text-64/76 font-bold uppercase">
+                We <span className="headline-text-gradient">embrace</span> the future of digital worlds powered by
+                true decentralization
+              </p>
+              <p className="font-archivo text-64/76 font-bold uppercase">
+                We <span className="headline-text-gradient">accelerate</span> the future of digital worlds powered by
+                true decentralization
+              </p>
+            </div>
+            <div className="slide-text-vertical">
+              <p className="font-archivo text-64/76 font-bold uppercase">
+                We <span className="headline-text-gradient">invest</span> in the future of digital worlds powered by
+                true decentralization
+              </p>
+              <p className="font-archivo text-64/76 font-bold uppercase">
+                We <span className="headline-text-gradient">embrace</span> in the future of digital worlds powered by
+                true decentralization
+              </p>
+              <p className="font-archivo text-64/76 font-bold uppercase">
+                We <span className="headline-text-gradient">accelerate</span> in the future of digital worlds powered by
+                true decentralization
+              </p>
+            </div>
+          </div> */}
 
           <div className="flex overflow-hidden lg:hidden">
             <div className="slide-text-horizontal">

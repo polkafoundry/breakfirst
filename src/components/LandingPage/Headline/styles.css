@@ -54,26 +54,79 @@
   animation: anim-horizontal infinite 12s ease 2s;
 }
 
-@keyframes anim-horizontal {
+.new-slide-container {
+  animation: container-width infinite 9s ease;
+}
+
+@keyframes container-width {
   0% {
-    transform: translateX(0%);
+    width: 334px;
   }
-  28.3% {
-    transform: translateX(0%);
+  26.67% {
+    width: 334px;
   }
-  33.3% {
-    transform: translateX(-33.3%);
+  30% {
+    width: 339px;
   }
-  61.7% {
-    transform: translateX(-33.3%);
+  60% {
+    width: 339px
   }
-  66.7% {
-    transform: translateX(-66.7%);
+  63.33% {
+    width: 420px;
   }
-  95% {
-    transform: translateX(-66.7%);
+  93.33% {
+    width: 420px;
+  }
+  96.67% {
+    width: 334px;
   }
   100% {
-    transform: translateX(-100%);
+    width: 334px;
+  }
+}
+
+.new-slide-text {
+  animation: anim-vertical-new infinite 9s ease;
+}
+
+@keyframes anim-vertical-new {
+  0% {
+    transform: translateY(0%);
+  }
+  23.33% {
+    transform: translateY(0%);
+  }
+  26.67% {
+    transform: translateY(-16.67%);
+  }
+  30% {
+    transform: translateY(-16.67%);
+  }
+  33.33% {
+    transform: translateY(-33.33%);
+  }
+  56.67% {
+    transform: translateY(-33.33%);
+  }
+  60% {
+    transform: translateY(-50%);
+  }
+  63.33% {
+    transform: translateY(-50%);
+  }
+  66.67% {
+    transform: translateY(-66.67%);
+  }
+  90% {
+    transform: translateY(-66.67%);
+  }
+  93.33% {
+    transform: translateY(-83.33%);
+  }
+  96.67% {
+    transform: translateY(-83.33%);
+  }
+  100% {
+    transform: translateY(-100%);
   }
 }
