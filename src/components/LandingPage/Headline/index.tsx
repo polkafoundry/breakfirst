@@ -20,7 +20,7 @@ const Headline = ({ ref }: IProps) => {
     document.querySelector('#headline-loading-logo').classList.add('anim-slide-out-up');
     document.querySelector('#main-headline').classList.add('anim-slide-in-up');
     document.querySelector('#header').classList.add('anim-header-fade-in');
-    document.querySelector('#main').classList.remove('overflow-y-hidden');
+    document.querySelector('#main').classList.remove('overflow-hidden');
   };
 
   return (

@@ -49,7 +49,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             poppins.variable,
             barlow.variable,
             archivo.variable,
-            'relative h-screen overflow-x-hidden w-screen overflow-y-hidden font-barlow text-white'
+            'relative h-screen w-screen overflow-hidden font-barlow text-white'
           )}
           id="main"
         >
