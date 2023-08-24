@@ -11,7 +11,7 @@ const Footer = () => {
     <footer>
       <div className="bg-[#193DE7]">
         <div className="mx-auto flex max-w-screen-3xl flex-col items-center gap-8 px-4 pb-3 pt-12 md:px-24 lg:gap-5 lg:px-0 lg:py-20">
-          <p className="max-w-screen-md text-center font-archivo text-3xl font-bold uppercase lg:text-36/50">
+          <p className="max-w-screen-md text-center font-archivo text-22/28 xs:text-3xl font-bold uppercase lg:text-36/50">
             Insight from the <span className="footer-text-gradient">BreakFirst team</span>, straight to your inbox
           </p>
           <div className="flex gap-3">
@@ -37,7 +37,7 @@ const Footer = () => {
             <Image src={Medium} alt="X Logo" width={20} height={20} />
           </LinkStyled> */}
           </div>
-          <div className="flex gap-8 lg:hidden">
+          <div className="xs:text-base text-sm flex gap-8 lg:hidden">
             {/* <LinkStyled href="/">Privacy Policy</LinkStyled>
             <LinkStyled href="/">Terms and Conditions</LinkStyled> */}
             <p>Privacy Policy</p>
@@ -53,7 +53,7 @@ const Footer = () => {
             <p>Privacy Policy</p>
             <p>Terms and Conditions</p>
           </div>
-          <div>
+          <div className='xs:text-base text-sm'>
             <p>© 2023 BreakFirst. All Rights Reserved.</p>
           </div>
         </div>

@@ -26,13 +26,16 @@ const Headline = ({ ref }: IProps) => {
   return (
     <section className={'relative h-screen w-full overflow-hidden text-white'} ref={ref}>
       <LoadingHeadline start={start} end={end} />
-      <div className="h-full w-full translate-y-[100vh] px-5 pt-20 md:px-20 lg:px-0 lg:pt-[100px]" id="main-headline">
-        <div className="mx-auto flex h-full max-w-screen-2xl flex-col justify-center gap-4 pb-[20vh] text-center lg:gap-8 lg:px-20 lg:pb-0 xl:px-40">
+      <div className="h-full w-full translate-y-[100vh] px-5 pt-20 md:px-5 lg:px-4 lg:pt-[100px] pb-[20vh] lg:pb-0 xl:px-20" id="main-headline">
+        <div className="mx-auto flex h-full max-w-screen-2xl flex-col justify-center gap-4 text-center lg:gap-8 ">
           <div className="">
-            <p className="font-archivo text-64/76 font-bold uppercase">
+            <p className="font-archivo text-3xl xs:text-36/44 md:text-40/56 lg:text-64/76 font-bold uppercase headline-text">
               We{' '}
-              <span className="new-slide-container relative inline-block h-[58px] w-[334px] overflow-hidden">
-                <span className="absolute -top-[1px] left-0 left-[50%] inline-flex -translate-x-[50%] flex-col">
+              {/* <span className='tracking-tight'>accelerate</span> */}
+              {/* <span className='tracking-wide'>invest in</span> */}
+              {/* <span className='tracking-wide'>embrace</span> */}
+              <span className="new-slide-container relative inline-block">
+                <span className="absolute left-[50%] inline-flex -translate-x-[50%] flex-col">
                   <span className="new-slide-text inline-flex flex-col">
                     <span className="headline-text-gradient tracking-wide">invest in</span>
                     <span>
@@ -63,72 +66,18 @@ const Headline = ({ ref }: IProps) => {
                   </span>
                 </span>
               </span>{' '}
-              the future of digital worlds powered by true decentralization
+              <br className='block xs:hidden' />
+              the{' '}
+              <br className='hidden xs:block sm:hidden' />
+              future{' '}
+              <br className='hidden xs:hidden sm:block md:hidden lg:block xl:hidden' />
+              of{' '}
+              <br className='hidden xs:hidden sm:hidden md:block lg:hidden xl:block' />
+              digital worlds powered by true decentralization
             </p>
           </div>
-          {/* <div className="hidden h-[228px] overflow-hidden lg:block">
-            <div className="slide-text-vertical">
-              <p className="font-archivo text-64/76 font-bold uppercase">
-                We <span className="headline-text-gradient">invest in</span> the future of digital worlds powered by
-                true decentralization
-              </p>
-              <p className="font-archivo text-64/76 font-bold uppercase">
-                We <span className="headline-text-gradient">embrace</span> the future of digital worlds powered by
-                true decentralization
-              </p>
-              <p className="font-archivo text-64/76 font-bold uppercase">
-                We <span className="headline-text-gradient">accelerate</span> the future of digital worlds powered by
-                true decentralization
-              </p>
-            </div>
-            <div className="slide-text-vertical">
-              <p className="font-archivo text-64/76 font-bold uppercase">
-                We <span className="headline-text-gradient">invest</span> in the future of digital worlds powered by
-                true decentralization
-              </p>
-              <p className="font-archivo text-64/76 font-bold uppercase">
-                We <span className="headline-text-gradient">embrace</span> in the future of digital worlds powered by
-                true decentralization
-              </p>
-              <p className="font-archivo text-64/76 font-bold uppercase">
-                We <span className="headline-text-gradient">accelerate</span> in the future of digital worlds powered by
-                true decentralization
-              </p>
-            </div>
-          </div> */}
-
-          <div className="flex overflow-hidden lg:hidden">
-            <div className="slide-text-horizontal">
-              <p className="w-[calc(100vw-40px)] shrink-0 font-archivo text-3xl font-bold uppercase xs:text-36/44 md:w-[calc(100vw-160px)]">
-                We <span className="headline-text-gradient">invest</span> in the future of digital worlds powered by
-                true decentralization
-              </p>
-              <p className="w-[calc(100vw-40px)] font-archivo text-3xl font-bold uppercase xs:text-36/44 md:w-[calc(100vw-160px)]">
-                We <span className="headline-text-gradient">embrace</span> in the future of digital worlds powered by
-                true decentralization
-              </p>
-              <p className="w-[calc(100vw-40px)] font-archivo text-3xl font-bold uppercase xs:text-36/44 md:w-[calc(100vw-160px)]">
-                We <span className="headline-text-gradient">accelerate</span> in the future of digital worlds powered by
-                true decentralization
-              </p>
-            </div>
-            <div className="slide-text-horizontal">
-              <p className="w-[calc(100vw-40px)] font-archivo text-3xl font-bold uppercase xs:text-36/44 md:w-[calc(100vw-160px)]">
-                We <span className="headline-text-gradient">invest</span> in the future of digital worlds powered by
-                true decentralization
-              </p>
-              <p className="w-[calc(100vw-40px)] font-archivo text-3xl font-bold uppercase xs:text-36/44 md:w-[calc(100vw-160px)]">
-                We <span className="headline-text-gradient">embrace</span> in the future of digital worlds powered by
-                true decentralization
-              </p>
-              <p className="w-[calc(100vw-40px)] font-archivo text-3xl font-bold uppercase xs:text-36/44 md:w-[calc(100vw-160px)]">
-                We <span className="headline-text-gradient">accelerate</span> in the future of digital worlds powered by
-                true decentralization
-              </p>
-            </div>
-          </div>
-
-          <p className="px-10 font-barlow text-sm xs:text-base md:px-20 lg:px-32 lg:text-xl xl:px-40">
+          
+          <p className="px-12 font-barlow text-sm xs:text-base sm:px-20 md:px-28 lg:px-32 lg:text-xl xl:px-40">
             BreakFirst is an early-stage venture fund led by a team of experienced crypto founders, incubators, and
             investors. Our focus is on accelerating genuine decentralization and on-chain solutions, breaking new ground
             and making it accessible to all.
