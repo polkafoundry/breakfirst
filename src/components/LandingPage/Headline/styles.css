@@ -26,31 +26,31 @@
   width: 149px;
   height: 27px;
   overflow: hidden;
-  animation: container-width-base infinite 9s ease;
+  animation: container-width-base infinite 9s ease 3s;
   
 
   @media screen and (min-width: 425px) {
     width: 188px;
     height: 34px;
-    animation: container-width-xs-sm infinite 9s ease;
+    animation: container-width-xs-sm infinite 9s ease 3s;
   }
 
   @media screen and (min-width: 640px) {
     width: 188px;
     height: 34px;
-    animation: container-width-xs-sm infinite 9s ease;
+    animation: container-width-xs-sm infinite 9s ease 3s;
   }
 
   @media screen and (min-width: 768px) {
     width: 210px;
     height: 41px;
-    animation: container-width-md infinite 9s ease;
+    animation: container-width-md infinite 9s ease 3s;
   }
   
   @media screen and (min-width: 1024px) {
     width: 334px;
     height: 58px;
-    animation: container-width-lg infinite 9s ease;
+    animation: container-width-lg infinite 9s ease 3s;
   }
 
  
@@ -165,7 +165,7 @@
 }
 
 .new-slide-text {
-  animation: anim-vertical infinite 9s ease-in-out;
+  animation: anim-vertical infinite 9s ease-in-out 3s;
 }
 
 
