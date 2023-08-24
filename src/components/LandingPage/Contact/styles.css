@@ -2,6 +2,7 @@
   background: -webkit-linear-gradient(0deg, #FF4DE5 -20%, #813DFF 20%, #1C89FF 120%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
 }
 
 .form-input {
