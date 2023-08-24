@@ -16,12 +16,12 @@ import './styles.css';
 
 const ContactForm = () => {
   return (
-    <div className="z-20 bg-black px-12 py-20 lg:grid lg:grid-cols-3 lg:px-15 xl:px-20">
+    <div className="z-20 bg-black px-8 xs:px-12 py-20 lg:grid lg:grid-cols-3 lg:px-15 xl:px-20">
       <div className="mx-auto mb-5 block max-w-[400px] lg:hidden">
         <Image src={Floating} alt="" />
       </div>
       <div className="lg:col-span-3 lg:pr-15 xl:col-span-2">
-        <h3 className="mb-8 font-archivo text-3xl font-bold uppercase lg:mb-14 lg:text-5xl">
+        <h3 className="mb-8 font-archivo text-22/28 xs:text-3xl font-bold uppercase lg:mb-14 lg:text-5xl">
           Don’t settle for mediocrity. If you think your product has the potential to disrupt the industry,{' '}
           <span className="contact-form-text-gradient">let’s talk</span>.
         </h3>

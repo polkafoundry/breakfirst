@@ -12,7 +12,7 @@ body {
   scrollbar-gutter: stable;
 }
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 1024px) {
   ::-webkit-scrollbar {
     width: 6px;
     height: 6px;
@@ -47,7 +47,10 @@ body {
   background: -webkit-linear-gradient(-90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 0.7) 50%, rgba(255, 255, 255, 0) 80%);
   -webkit-background-clip: text;
   -webkit-text-stroke: 1px transparent;
-  color: black;
+  @media (prefers-color-scheme: dark) {
+    color: black !important;
+  }
+  color: black !important;
 }
 
 @media only screen and (min-width: 1024px) {

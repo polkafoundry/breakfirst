@@ -27,6 +27,7 @@ export const SlidesData = [
       {
         url: 'https://www.youtube.com/embed/d2DhLTJFK58',
         thumbnail: NextBullThumb,
+        thumbnaiText: 'GM Next Bull: A Night with Web3 Social and Games',
         type: 'video',
       },
       {
@@ -70,6 +71,7 @@ export const SlidesData = [
       {
         url: 'https://www.youtube.com/embed/lkg7cOJbbuI',
         thumbnail: CocktailThumb,
+        thumbnaiText: 'Private Cocktail Night 2022',
         type: 'video',
       },
       {

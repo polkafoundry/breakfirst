@@ -16,7 +16,7 @@ const LoadingHeadline = ({ start, end }: IProps) => {
         id="headline-grow-bg"
       />
       <div className="w-3/5 lg:h-fit lg:w-fit">
-        <Image src={LogoText} alt="" id="headline-loading-logo" />
+        <Image src={LogoText} alt="" id="headline-loading-logo" className='mx-auto' />
       </div>
       <div id="headline-count-up">
         <CountUp
