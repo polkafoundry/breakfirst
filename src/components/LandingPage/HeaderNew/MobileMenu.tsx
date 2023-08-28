@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import clsx from 'clsx';
-import LinkStyled from '@/components/Base/LinkStyled';
+// import LinkStyled from '@/components/Base/LinkStyled';
 import { NavbarItems } from '@/constants';
 import Logo from '@/assets/images/logo.svg';
 import MenuOpen from '@/assets/images/LandingPage/nav-menu-open.svg';

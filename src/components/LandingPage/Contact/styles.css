@@ -31,6 +31,6 @@ textarea.form-input {
 
 @media only screen and (min-width: 1024px) {
   .contact-container-background {
-    background: linear-gradient(#000000 85%, #193DE7 85%, #193DE7 150%)
+    background: -webkit-linear-gradient(#000000 85%, #193DE7 85%, #193DE7 150%)
   }
 }

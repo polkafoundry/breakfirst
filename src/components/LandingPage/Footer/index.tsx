@@ -1,5 +1,5 @@
 import './styles.css';
-import LinkStyled from '@/components/Base/LinkStyled';
+// import LinkStyled from '@/components/Base/LinkStyled';
 // import Image from 'next/image';
 // import Medium from '@/assets/images/LandingPage/medium-logo.svg';
 // import X from '@/assets/images/LandingPage/x-logo.svg';
