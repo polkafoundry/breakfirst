@@ -6,11 +6,14 @@ import Attention from './Attention';
 import Snapshots from './Snapshots';
 import Contact from './Contact';
 import Footer from './Footer';
+import HeaderNew from './HeaderNew';
+import FooterNew from './FooterNew';
 
 const LandingPage = () => {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
+      <HeaderNew />
 
       <Headline />
       <SubHeadline />
@@ -19,7 +22,8 @@ const LandingPage = () => {
       <Snapshots />
       <Contact />
 
-      <Footer />
+      {/* <Footer /> */}
+      <FooterNew />
     </>
   );
 };
