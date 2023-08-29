@@ -18,10 +18,6 @@
   -webkit-box-decoration-break: clone;
 }
 
-.headline-text {
-  -webkit-text-size-adjust: none;
-}
-
 .new-slide-container {
   width: 9.375rem;
   /* height: 27px; */
