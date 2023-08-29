@@ -37,32 +37,32 @@ const Headline = ({ ref }: IProps) => {
               {/* <span className='tracking-wide'>invest in</span> */}
               {/* <span className='tracking-wide'>embrace</span> */}
               <span className="new-slide-container relative inline-block text-transparent">
-                <span>holder</span>
+                <span className="controller"></span>
                 <span className="absolute left-[50%] inline-flex -translate-x-[50%] flex-col">
                   <span className="new-slide-text inline-flex flex-col">
-                    <span className="headline-text-gradient tracking-wide">invest in</span>
+                    <span className="headline-text-gradient ">invest in</span>
                     <span>
                       <br />
                     </span>
-                    <span className="headline-text-gradient tracking-wide">embrace</span>
+                    <span className="headline-text-gradient ">embrace</span>
                     <span>
                       <br />
                     </span>
-                    <span className="headline-text-gradient tracking-tight">accelerate</span>
+                    <span className="headline-text-gradient ">accelerate</span>
                     <span>
                       <br />
                     </span>
                   </span>
                   <span className="new-slide-text inline-flex flex-col">
-                    <span className="headline-text-gradient tracking-wide">invest in</span>
+                    <span className="headline-text-gradient ">invest in</span>
                     <span>
                       <br />
                     </span>
-                    <span className="headline-text-gradient tracking-wide">embrace</span>
+                    <span className="headline-text-gradient ">embrace</span>
                     <span>
                       <br />
                     </span>
-                    <span className="headline-text-gradient tracking-tight">accelerate</span>
+                    <span className="headline-text-gradient ">accelerate</span>
                     <span>
                       <br />
                     </span>
