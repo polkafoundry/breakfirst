@@ -33,9 +33,7 @@ const Headline = ({ ref }: IProps) => {
         <div className="mx-auto flex h-full max-w-screen-2xl flex-col justify-center gap-4 text-center lg:gap-8 ">
           <div className="">
             <p className="headline-text font-archivo text-3xl font-bold uppercase xs:text-36/44 md:text-40/56 lg:text-64/76">
-              We {/* <span className='tracking-tight'>accelerate</span> */}
-              {/* <span className='tracking-wide'>invest in</span> */}
-              {/* <span className='tracking-wide'>embrace</span> */}
+              We{' '}
               <span className="new-slide-container relative inline-block text-transparent">
                 <span className="controller"></span>
                 <span className="absolute left-[50%] inline-flex -translate-x-[50%] flex-col">

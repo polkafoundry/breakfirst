@@ -22,6 +22,7 @@
   /* width: 9.375rem; */
   /* height: 27px; */
   overflow: clip;
+  transition: content 1s ease-in-out;
   /* animation: container-width-base infinite 9s ease 3s; */
   
 
@@ -209,45 +210,33 @@
 
 .controller::before {
   content: ' invest in ';
-  /* letter-spacing: 0.025em; */
   padding: 0 1px;
   animation: controller-anim infinite 9s ease 3s;
-  max-width: 0;
-  transition: max-width 1s;
-  -webkit-transition: max-width 1s;
 }
 
 @keyframes controller-anim {
   0% {
     content: ' invest in ';
-    /* letter-spacing: 0.025em; */
   }
   29.17% {
     content: ' invest in ';
-    /* letter-spacing: 0.025em; */
   }
   31.94% {
     content: ' embrace ';
-    /* letter-spacing: 0.025em; */
   }
   62.50% {
     content: ' embrace ';
-    /* letter-spacing: 0.025em; */
   }
   65.28% {
     content: 'accelarate';
-    /* letter-spacing: -0.025em; */
   }
   95.83% {
     content: 'accelarate';
-    /* letter-spacing: -0.025em; */
   }
   98.61% {
     content: 'invest in';
-    /* letter-spacing: 0.025em; */
   }
   100% {
     content: 'invest in';
-    /* letter-spacing: 0.025em; */
   }
 }
