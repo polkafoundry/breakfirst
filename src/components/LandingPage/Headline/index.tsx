@@ -34,43 +34,42 @@ const Headline = ({ ref }: IProps) => {
           <div className="">
             <p className="headline-text font-archivo text-3xl font-bold uppercase xs:text-36/44 md:text-40/56 lg:text-64/76">
               We{' '}
-              <span className="new-slide-container relative inline-block text-transparent">
+              <span className="slide-container relative inline-block text-transparent">
                 <span className="controller"></span>
                 <span className="absolute left-[50%] inline-flex -translate-x-[50%] flex-col">
-                  <span className="new-slide-text inline-flex flex-col">
-                    <span className="headline-text-gradient ">invest in</span>
+                  <span className="slide-text inline-flex flex-col">
+                    <span className="headline-text-gradient">invest in</span>
                     <span>
                       <br />
                     </span>
-                    <span className="headline-text-gradient ">embrace</span>
+                    <span className="headline-text-gradient">embrace</span>
                     <span>
                       <br />
                     </span>
-                    <span className="headline-text-gradient ">accelerate</span>
+                    <span className="headline-text-gradient">accelerate</span>
                     <span>
                       <br />
                     </span>
                   </span>
                   <span className="new-slide-text inline-flex flex-col">
-                    <span className="headline-text-gradient ">invest in</span>
+                    <span className="headline-text-gradient">invest in</span>
                     <span>
                       <br />
                     </span>
-                    <span className="headline-text-gradient ">embrace</span>
+                    <span className="headline-text-gradient">embrace</span>
                     <span>
                       <br />
                     </span>
-                    <span className="headline-text-gradient ">accelerate</span>
+                    <span className="headline-text-gradient">accelerate</span>
                     <span>
                       <br />
                     </span>
                   </span>
                 </span>
               </span>{' '}
-              <br className="block xs:hidden" />
-              the <br className="hidden xs:block sm:hidden" />
-              future <br className="hidden xs:hidden sm:block md:hidden lg:block xl:hidden" />
-              of <br className="hidden xs:hidden sm:hidden md:block lg:hidden xl:block" />
+              <br className="block sm:hidden" />
+              the future <br className="hidden sm:block md:hidden lg:block xl:hidden" />
+              of <br className="hidden md:block lg:hidden xl:block" />
               digital worlds powered by true decentralization
             </p>
           </div>

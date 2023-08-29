@@ -18,7 +18,7 @@
   -webkit-box-decoration-break: clone;
 }
 
-.new-slide-container {
+.slide-container {
   /* width: 9.375rem; */
   /* height: 27px; */
   overflow: clip;
@@ -161,7 +161,7 @@
   }
 }
 
-.new-slide-text {
+.slide-text {
   animation: anim-vertical infinite 9s ease-in-out 3s;
 }
 
@@ -208,24 +208,24 @@
   }
 }
 
-.controller::before {
-  content: ' invest in ';
+.slide-container .controller::before {
+  content: 'invest in';
   padding: 0 1px;
   animation: controller-anim infinite 9s ease 3s;
 }
 
 @keyframes controller-anim {
   0% {
-    content: ' invest in ';
+    content: 'invest in';
   }
   29.17% {
-    content: ' invest in ';
+    content: 'invest in';
   }
   31.94% {
-    content: ' embrace ';
+    content: 'embrace';
   }
   62.50% {
-    content: ' embrace ';
+    content: 'embrace';
   }
   65.28% {
     content: 'accelarate';
