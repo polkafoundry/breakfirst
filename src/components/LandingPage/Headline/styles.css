@@ -24,33 +24,33 @@
 }
 
 .new-slide-container {
-  width: 149px;
-  height: 27px;
-  overflow: hidden;
+  width: 9.375rem;
+  /* height: 27px; */
+  overflow: clip;
   animation: container-width-base infinite 9s ease 3s;
   
 
   @media screen and (min-width: 425px) {
-    width: 188px;
-    height: 34px;
+    width: 11.75rem;
+    /* height: 34px; */
     animation: container-width-xs-sm infinite 9s ease 3s;
   }
 
-  @media screen and (min-width: 640px) {
-    width: 188px;
+  /* @media screen and (min-width: 640px) {
+    width: 11.75rem;
     height: 34px;
     animation: container-width-xs-sm infinite 9s ease 3s;
-  }
+  } */
 
   @media screen and (min-width: 768px) {
-    width: 210px;
-    height: 41px;
+    width: 13.125rem;
+    /* height: 41px; */
     animation: container-width-md infinite 9s ease 3s;
   }
   
   @media screen and (min-width: 1024px) {
-    width: 334px;
-    height: 58px;
+    width: 20.875rem;
+    /* height: 58px; */
     animation: container-width-lg infinite 9s ease 3s;
   }
 
@@ -59,109 +59,109 @@
 
 @keyframes container-width-base {
   0% {
-    width: 149px;
+    width: 9.375rem;
   }
   29.17% {
-    width: 149px;
+    width: 9.375rem;
   }
   31.94% {
-    width: 149px;
+    width: 9.375rem;
   }
   62.50% {
-    width: 149px;
+    width: 9.375rem;
   }
   65.28% {
-    width: 184px;
+    width: 11.5rem;
   }
   95.83% {
-    width: 184px;
+    width: 11.5rem;
   }
   98.61% {
-    width: 149px;
+    width: 9.375rem;
   }
   100% {
-    width: 149px;
+    width: 9.375rem;
   }
 }
 
 @keyframes container-width-xs-sm {
   0% {
-    width: 188px;
+    width: 11.75rem;
   }
   29.17% {
-    width: 188px;
+    width: 11.75rem;
   }
   31.94% {
-    width: 192px;
+    width: 12rem;
   }
   62.50% {
-    width: 192px;
+    width: 12rem;
   }
   65.28% {
-    width: 236px;
+    width: 14.75rem;
   }
   95.83% {
-    width: 236px;
+    width: 14.75rem;
   }
   98.61% {
-    width: 188px;
+    width: 11.75rem;
   }
   100% {
-    width: 188px;
+    width: 11.75rem;
   }
 }
 
 @keyframes container-width-md {
   0% {
-    width: 210px;
+    width: 13.125rem;
   }
   29.17% {
-    width: 210px;
+    width: 13.125rem;
   }
   31.94% {
-    width: 214px;
+    width: 13.375rem;
   }
   62.50% {
-    width: 214px;
+    width: 13.375rem;
   }
   65.28% {
-    width: 263px;
+    width: 16.5rem;
   }
   95.83% {
-    width: 263px;
+    width: 16.5rem;
   }
   98.61% {
-    width: 210px;
+    width: 13.125rem;
   }
   100% {
-    width: 210px;
+    width: 13.125rem;
   }
 }
 
 @keyframes container-width-lg {
   0% {
-    width: 334px;
+    width: 20.875rem;
   }
   29.17% {
-    width: 334px;
+    width: 20.875rem;
   }
   31.94% {
-    width: 340px;
+    width: 21.25rem;
   }
   62.50% {
-    width: 340px;
+    width: 21.25rem;
   }
   65.28% {
-    width: 420px;
+    width: 26.25rem;
   }
   95.83% {
-    width: 420px;
+    width: 26.25rem;
   }
   98.61% {
-    width: 334px;
+    width: 20.875rem;
   }
   100% {
-    width: 334px;
+    width: 20.875rem;
   }
 }
 
