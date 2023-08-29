@@ -18,9 +18,8 @@
   -webkit-box-decoration-break: clone;
 }
 
-.headline-text::first-line {
-  padding-left: 20px;
-  padding-right: 20px;
+.headline-text {
+  -webkit-text-size-adjust: none;
 }
 
 .new-slide-container {
