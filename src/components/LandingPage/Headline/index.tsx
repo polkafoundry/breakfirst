@@ -51,7 +51,7 @@ const Headline = ({ ref }: IProps) => {
                       <br />
                     </span>
                   </span>
-                  <span className="new-slide-text inline-flex flex-col">
+                  <span className="slide-text inline-flex flex-col">
                     <span className="headline-text-gradient">invest in</span>
                     <span>
                       <br />
