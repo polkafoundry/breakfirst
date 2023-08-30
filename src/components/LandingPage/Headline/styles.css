@@ -21,7 +21,8 @@
 .slide-container {
   /* width: 9.375rem; */
   /* height: 27px; */
-  overflow: clip;
+  overflow: hidden;
+  vertical-align: top;
   transition: content 1s ease-in-out;
   /* animation: container-width-base infinite 9s ease 3s; */
   
