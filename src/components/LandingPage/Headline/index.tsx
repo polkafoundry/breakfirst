@@ -1,6 +1,6 @@
 'use client';
 
-import { MutableRefObject } from 'react';
+import { MutableRefObject, useEffect, useState } from 'react';
 import LoadingHeadline from './LoadingHeadline';
 import './styles.css';
 
@@ -10,6 +10,8 @@ interface IProps {
 }
 
 const Headline = ({ ref }: IProps) => {
+  const [delayOver, setDelayOver] = useState<boolean>(false);
+
   const start = () => {
     document.querySelector('#headline-grow-bg').classList.remove('init-headline-background');
     document.querySelector('#headline-grow-bg').classList.add('headline-background');
@@ -23,6 +25,44 @@ const Headline = ({ ref }: IProps) => {
     document.querySelector('#main').classList.remove('overflow-hidden');
   };
 
+  useEffect(() => {
+    const delay = setTimeout(() => {
+      document.getElementById('headline-slide-text-1').classList.add('slide-text');
+      document.getElementById('headline-slide-text-2').classList.add('slide-text');
+    }, 2000);
+    const delayContainer = setTimeout(() => {
+      setDelayOver(true);
+    }, 1700);
+    const clearTimeouts = () => {
+      () => clearTimeout(delay);
+      () => clearTimeout(delayContainer);
+    };
+    return () => clearTimeouts();
+  }, []);
+
+  useEffect(() => {
+    if (delayOver) {
+      const container = document.getElementById('headline-slide-container');
+      let widths = [
+        document.getElementById('headline-invest').offsetWidth + 1,
+        document.getElementById('headline-embrace').offsetWidth,
+        document.getElementById('headline-accelerate').offsetWidth,
+      ];
+      const slidesCount = widths.length;
+      let i = 1;
+      const interval = setInterval(() => {
+        widths = [
+          document.getElementById('headline-invest').offsetWidth + 1,
+          document.getElementById('headline-embrace').offsetWidth,
+          document.getElementById('headline-accelerate').offsetWidth,
+        ];
+        container.style.width = widths[i % slidesCount] + 'px';
+        i++;
+      }, 3000);
+      return () => clearInterval(interval);
+    }
+  }, [delayOver]);
+
   return (
     <section className={'relative h-screen w-full overflow-hidden text-white'} ref={ref}>
       <LoadingHeadline start={start} end={end} />
@@ -34,33 +74,39 @@ const Headline = ({ ref }: IProps) => {
           <div className="">
             <p className="headline-text font-archivo text-3xl font-bold uppercase xs:text-36/44 md:text-40/56 lg:text-64/76">
               We{' '}
-              <span className="slide-container relative inline-block text-transparent">
-                <span className="controller"></span>
+              <span className="slide-container relative inline-block text-transparent" id="headline-slide-container">
+                <span className="controller">invest in</span>
                 <span className="absolute left-[50%] inline-flex -translate-x-[50%] flex-col">
-                  <span className="slide-text inline-flex flex-col">
-                    <span className="headline-text-gradient">invest in</span>
+                  <span className="inline-flex flex-col items-center" id="headline-slide-text-1">
+                    <span className="headline-text-gradient w-fit" id="headline-invest">
+                      invest in
+                    </span>
                     <span>
                       <br />
                     </span>
-                    <span className="headline-text-gradient">embrace</span>
+                    <span className="headline-text-gradient w-fit" id="headline-embrace">
+                      embrace
+                    </span>
                     <span>
                       <br />
                     </span>
-                    <span className="headline-text-gradient">accelerate</span>
+                    <span className="headline-text-gradient w-fit" id="headline-accelerate">
+                      accelerate
+                    </span>
                     <span>
                       <br />
                     </span>
                   </span>
-                  <span className="slide-text inline-flex flex-col">
-                    <span className="headline-text-gradient">invest in</span>
+                  <span className="inline-flex flex-col items-center" id="headline-slide-text-2">
+                    <span className="headline-text-gradient w-fit">invest in</span>
                     <span>
                       <br />
                     </span>
-                    <span className="headline-text-gradient">embrace</span>
+                    <span className="headline-text-gradient w-fit">embrace</span>
                     <span>
                       <br />
                     </span>
-                    <span className="headline-text-gradient">accelerate</span>
+                    <span className="headline-text-gradient w-fit">accelerate</span>
                     <span>
                       <br />
                     </span>
